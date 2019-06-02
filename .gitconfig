@@ -1,0 +1,12 @@
+[core]
+	excludesfile = /Users/jluebbers/.gitignore
+	editor = vim
+[user]
+	name = Jonas Luebbers
+	email = jonaskluebbers@gmail.com
+[alias]
+	lg = log --oneline
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
