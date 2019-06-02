@@ -1,6 +1,6 @@
 [core]
 	excludesfile = /Users/jluebbers/.gitignore
-	editor = vim
+	editor = code --wait
 [user]
 	name = Jonas Luebbers
 	email = jonaskluebbers@gmail.com
