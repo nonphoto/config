@@ -1,5 +1,5 @@
 # Config
-My macOS environment, using [this strategy from Atlassian](https://www.atlassian.com/git/tutorials/dotfiles). Basically I set up
+My macOS environment, using [this strategy from Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ```
 git clone --bare https://github.com/nonphoto/config.git $HOME/.cfg
