@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/jluebbers/.gitignore
+	excludesfile = /Users/jonasluebbers/.gitignore
 	editor = code --wait
 [user]
 	name = Jonas Luebbers
