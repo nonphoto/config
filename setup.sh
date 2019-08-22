@@ -14,7 +14,7 @@ brew install nvm
 
 # Install Node
 mkdir ~/.nvm
-nvm install node
+nvm install lts/*
 
 # Install fonts
 cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
