@@ -2,9 +2,6 @@ export VISUAL=code
 export EDITOR="$VISUAL"
 export PATH=${PATH}:~/bin
 
-source "/usr/local/etc/bash_completion.d/git-completion.bash"
-source "/usr/local/etc/bash_completion.d/git-prompt.sh"
-
 PS1='\[\e[1m\][\W] $(__git_ps1 "(%s) ")\[\e[0m\]'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -46,5 +43,13 @@ function colors {
 }
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
+    # if not found in /usr/local/etc, try the brew --prefix location
+    [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
+        . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+}
+
+source $(brew --prefix nvm)/nvm.sh
