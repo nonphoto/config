@@ -27,29 +27,29 @@ module.exports = {
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgb(73, 143, 230)',
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: '#000',
+    cursorAccentColor: 'rgb(0, 0, 0)',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'BEAM',
+    cursorShape: 'BLOCK',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: true,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: 'rgb(229, 229, 229)',
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#000',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
 
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+    selectionColor: 'rgba(73, 143, 230, 0.5)',
 
     // border color (window, tabs)
-    borderColor: '#000',
+    borderColor: 'rgb(0, 0, 0)',
 
     // custom CSS to embed in the main window
     css: '',
@@ -67,28 +67,28 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '10px 2px 10px 10px',
+    padding: '10px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      red: '#C51E14',
-      green: '#1DC121',
-      yellow: '#C7C329',
-      blue: '#0A2FC4',
-      magenta: '#C839C5',
-      cyan: '#20C5C6',
-      white: '#C7C7C7',
-      lightBlack: '#686868',
-      lightRed: '#FD6F6B',
-      lightGreen: '#67F86F',
-      lightYellow: '#FFFA72',
-      lightBlue: '#6A76FB',
-      lightMagenta: '#FD7CFC',
-      lightCyan: '#68FDFE',
-      lightWhite: '#FFFFFF',
+      black: 'rgb(0, 0, 0)',
+      red: 'rgb(192, 65, 55)',
+      green: 'rgb(79, 182, 122)',
+      yellow: 'rgb(231, 227, 58)',
+      blue: 'rgb(51, 115, 197)',
+      magenta: 'rgb(175, 78, 185)',
+      cyan: 'rgb(68, 166, 203)',
+      white: 'rgb(229, 229, 229)',
+      lightBlack: 'rgb(102, 102, 102)',
+      lightRed: 'rgb(226, 90, 82)',
+      lightGreen: 'rgb(94, 204, 141)',
+      lightYellow: 'rgb(247, 243, 88)',
+      lightBlue: 'rgb(73, 143, 230)',
+      lightMagenta: 'rgb(202, 121, 212)',
+      lightCyan: 'rgb(82, 182, 217)',
+      lightWhite: 'rgb(255, 255, 255)',
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
