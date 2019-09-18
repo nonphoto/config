@@ -17,6 +17,10 @@ function cdp {
 	cd ~/projects/$1
 }
 
+function ff {
+	 nohup /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox -foreground -start-debugger-server &
+}
+
 function mcserver {
 	java -Xmx1024M -Xms1024M -jar $1 nogui
 }
