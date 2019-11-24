@@ -1,6 +1,7 @@
 export VISUAL=code
 export EDITOR="$VISUAL"
 export PATH=${PATH}:~/bin
+export PATH="$HOME/.cargo/bin:$PATH"
 
 PS1='\[\e[1m\][\W] $(__git_ps1 "(%s) ")\[\e[0m\]'
 
@@ -15,6 +16,10 @@ alias love="/Applications/love.app/Contents/MacOS/love"
 
 function cdp {
 	cd ~/projects/$1
+}
+
+function ff {
+	 nohup /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox -foreground -start-debugger-server &
 }
 
 function mcserver {
@@ -53,4 +58,3 @@ export NVM_DIR="$HOME/.nvm"
 }
 
 source $(brew --prefix nvm)/nvm.sh
-export PATH="$HOME/.cargo/bin:$PATH"
