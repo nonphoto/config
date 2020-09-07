@@ -11,19 +11,12 @@ brew update
 brew install trash
 brew install git bash-completion
 brew install nvm
+brew install fish
+brew install deno
 
 # Install Node
 mkdir ~/.nvm
 nvm install lts/*
-
-# Install Rust
-if test ! $(which rustc); then
-  echo "Installing Rust..."
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-fi
-
-# Rust installs
-cargo install eva
 
 # Install fonts
 cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
